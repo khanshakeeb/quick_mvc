@@ -1,7 +1,4 @@
-'use strict';
-module.exports = (sequelize, DataTypes) => {
-  var User = sequelize.define('users', {
-    id: DataTypes.INTEGER
-  });
-  return User;
-};
+/**
+ * In future user model will be called from here
+ * Right now model has been called from root model folder
+ */

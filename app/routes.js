@@ -5,5 +5,6 @@
  */
 const userRoutes = require('./modules/users/routes.js');
 module.exports= function(app){
-    app.use('/api/v1', userRoutes);       
+    //pass app object to user routes
+    app.use('/api/v1', userRoutes(app));       
 }

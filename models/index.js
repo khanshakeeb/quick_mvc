@@ -14,8 +14,7 @@ if (config.use_env_variable) {
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
-console.log("sdfdsfds",__dirname);
-console.log('Starting directory: ');
+
 fs
   .readdirSync(__dirname)
   .filter(file => {
